@@ -7,18 +7,18 @@ const ServicesSection = () => {
   const services = [
     {
       image: teamImage,
-      title: "Team Building",
-      description: "Strengthen your team dynamics and collaboration"
+      title: "Platform Features",
+      description: "Agent orchestration and real-time workflows"
     },
     {
       image: growthImage,
-      title: "Business Growth",
-      description: "Strategic planning for sustainable business expansion"
+      title: "Enterprise Solutions",
+      description: "Comprehensive intelligence platform for all departments"
     },
     {
       image: financialImage,
-      title: "Financial Advisory",
-      description: "Expert financial consulting and advisory services"
+      title: "Proven Results",
+      description: "$50M+ cost savings across 200+ deployments"
     }
   ];
 
@@ -26,23 +26,23 @@ const ServicesSection = () => {
     <section className="py-20 bg-section-bg">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <div className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
-            Our Services
+          <div className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4 animate-fade-in">
+            Transform Your Enterprise
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            We are different agency to
+          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6 animate-fade-in" style={{animationDelay: '0.2s'}}>
+            Assess, Build & Optimize
             <br />
-            <span className="text-primary">Improve your deals.</span>
+            <span className="text-primary">Your Digital Future.</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Our comprehensive approach ensures that every aspect of your business 
-            is optimized for success and growth.
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto animate-fade-in" style={{animationDelay: '0.4s'}}>
+            Our proven methodology delivers comprehensive analysis, seamless integration, 
+            and continuous optimization for enterprise-scale transformations.
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-0 shadow-md">
+            <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-0 shadow-md animate-fade-in hover-scale" style={{animationDelay: `${0.6 + index * 0.1}s`}}>
               <CardContent className="p-0">
                 <div className="aspect-[4/3] overflow-hidden rounded-t-lg">
                   <img 

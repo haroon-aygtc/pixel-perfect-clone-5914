@@ -4,24 +4,24 @@ import { Button } from "@/components/ui/button";
 const ConsultingServices = () => {
   const services = [
     {
-      title: "Strategic Planning",
-      description: "Comprehensive strategic planning services to align your business goals with market opportunities.",
-      features: ["Market Analysis", "Competitive Research", "Growth Strategy", "Risk Assessment"]
+      title: "Platform Licensing",
+      description: "Microsoft, Oracle, SAP enterprise licensing & integration with seamless deployment.",
+      features: ["Enterprise Licensing", "System Integration", "Compliance Management", "Support Services"]
     },
     {
-      title: "Financial Advisory",
-      description: "Expert financial consulting to optimize your capital structure and improve profitability.",
-      features: ["Financial Planning", "Investment Strategy", "Cost Optimization", "Performance Metrics"]
+      title: "Custom Development",
+      description: "SaaS applications, APIs, and enterprise-grade solutions tailored to your needs.",
+      features: ["API Development", "SaaS Solutions", "Custom Applications", "Scalable Architecture"]
     },
     {
-      title: "Operations Excellence",
-      description: "Streamline your operations for maximum efficiency and sustainable growth.",
-      features: ["Process Optimization", "Quality Management", "Supply Chain", "Digital Transformation"]
+      title: "AI Integration & Automation",
+      description: "Workflow intelligence, cognitive agents, and predictive analytics for enterprise operations.",
+      features: ["Intelligent Workflows", "Cognitive Agents", "Predictive Analytics", "Process Automation"]
     },
     {
-      title: "Digital Transformation",
-      description: "Navigate the digital landscape with our comprehensive transformation services.",
-      features: ["Technology Strategy", "Digital Solutions", "Data Analytics", "Innovation Planning"]
+      title: "Hardware Procurement",
+      description: "Enterprise servers, networking, and IT infrastructure with expert implementation.",
+      features: ["Server Infrastructure", "Network Equipment", "Security Hardware", "Cloud Migration"]
     }
   ];
 
@@ -29,27 +29,27 @@ const ConsultingServices = () => {
     <section className="py-20 bg-section-bg">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <div className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
-            Our Expertise
+          <div className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4 animate-fade-in">
+            Enterprise Services
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Our Business & Financial
+          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6 animate-fade-in" style={{animationDelay: '0.2s'}}>
+            Complete Technology &
             <br />
-            <span className="text-primary">Consulting Services</span>
+            <span className="text-primary">Integration Services</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We provide end-to-end consulting services that drive measurable results 
-            and sustainable business transformation.
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-fade-in" style={{animationDelay: '0.4s'}}>
+            From platform licensing to AI automation, we deliver end-to-end technology solutions 
+            that drive measurable enterprise transformation.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {services.map((service, index) => (
-            <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-md">
+            <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-md animate-fade-in hover-scale" style={{animationDelay: `${0.6 + index * 0.1}s`}}>
               <CardContent className="p-8">
                 <div className="mb-6">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                    <div className="w-6 h-6 bg-primary rounded" />
+                    <div className="w-6 h-6 bg-primary rounded pulse" />
                   </div>
                   <h3 className="text-2xl font-bold text-foreground mb-3">{service.title}</h3>
                   <p className="text-muted-foreground leading-relaxed">{service.description}</p>
@@ -68,9 +68,9 @@ const ConsultingServices = () => {
                 
                 <Button 
                   variant="outline" 
-                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground w-full"
+                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground w-full hover-scale"
                 >
-                  Learn More
+                  Get Started
                 </Button>
               </CardContent>
             </Card>
